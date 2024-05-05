@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- icon title -->
+    <link rel="apple-touch-icon" type="image/png" href="img/iconLogo.svg" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="76x76"
+      href="img/iconLogo.svg"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="120x120"
+      href="img/iconLogo.svg"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="152x152"
+      href="img/iconLogo.svg"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="img/iconLogo.svg"
+      sizes="60x60"
+    />
+    <link rel="icon" type="image/png" href="img/iconLogo.svg" />
+    <link rel="icon" type="image/png" href="img/iconLogo.svg" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/iconLogo.svg" sizes="192x192" />
+    <link rel="icon" type="image/png" href="img/iconLogo.svg" sizes="16x16" />
+
+    <!-- aosJS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
+    <!-- 
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style> 
+    -->
+
+    <!-- style css -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        scroll-behavior: smooth 5000s;
+      }
+    </style>
+    <title>Fortune - Freedom Finance is Priority</title>
+  </head>
+
+  <body>
+    <div
+      class="container max-w-full h-full sm:bg-repeat bg-repeat bg-[url('img/bg.jpg')]"
+    >
+      <div class="backdrop-filter backdrop-blur-[13rem]">
+        <!-- header -->
+        <div
+          id="header"
+          class="w-full grid-cols-3 flex justify-between p-10 pt-14"
+        >
+          <div id="menu_aside" class="my-auto">
+            <button
+              type="button"
+              class="btn border-none hover:bg-transparent btn-circle"
+              data-drawer-backdrop="false"
+              data-drawer-target="drawer-left-example"
+              data-drawer-show="drawer-left-example"
+              data-drawer-placement="left"
+              aria-controls="drawer-left-example"
+            >
+              <img src="img/menu.svg" alt="" class="w-11 sm:w-12 left-0" />
+            </button>
+            <div
+              id="drawer-left-example"
+              class="dark:bg-opacity-100 fixed top-0 left-0 z-50 p-4 overflow-y-auto transition-transform duration-500 -translate-x-full w-full h-full bg-gradient-to-t from-cyan-700/5 to-[#333757] filter backdrop-blur-[5rem]"
+              tabindex="-1"
+              aria-labelledby="drawer-left-label"
+            >
+              <div class="w-full h-full flex justify-center">
+                <button
+                  type="button"
+                  class="outline-none absolute right-14 top-10"
+                  data-drawer-hide="drawer-left-example"
+                  aria-controls="drawer-left-example"
+                >
+                  <img src="img/close.svg" alt="" class="w-9" />
+                </button>
+                <ul
+                  class="h-max w-max my-[20rem] mx-auto md:my-[20rem] md:mx-auto gap-4"
+                >
+                  <li class="text-center flex">
+                    <img
+                      src="img/Iconsax/Linear/home3.svg"
+                      alt=""
+                      class="my-auto w-10 pr-2"
+                    />
+                    <a
+                      href="#"
+                      class="dark:text-white text-white font-bold md:text-4xl text-2xl"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="text-center pt-5 flex">
+                    <img
+                      src="img/abouti.svg"
+                      alt=""
+                      class="my-auto w-10 pr-3"
+                    />
+                    <a
+                      href="#"
+                      class="text-white font-bold text-2xl md:text-4xl"
+                      >About</a
+                    >
+                  </li>
+                  <li class="text-center py-5 flex">
+                    <img
+                      src="img/Iconsax/Bold/profile2user.svg"
+                      alt=""
+                      class="my-auto w-11 pr-3"
+                    />
+                    <a
+                      href="#"
+                      class="text-white font-bold text-2xl md:text-4xl"
+                      >Contact</a
+                    >
+                  </li>
+                  <li class="text-center pb-5 flex">
+                    <img
+                      src="img/Iconsax/Linear/setting2.svg"
+                      alt=""
+                      class="my-auto w-11 pr-3"
+                    />
+                    <a
+                      href="#"
+                      class="text-white font-bold text-2xl md:text-4xl"
+                      >Settings</a
+                    >
+                  </li>
+                  <li class="text-center flex w-40">
+                    <img
+                      src="img/profile.svg"
+                      alt=""
+                      class="w-12 my-auto pr-3"
+                    />
+                    <a
+                      href="#"
+                      class="text-white font-bold text-2xl md:text-4xl"
+                      >Log In</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- profile -->
+          <div id="profile" class="my-auto">
+            <button
+              class="btn border-none hover:bg-transparent btn-circle bg-transparent"
+              id="dropdownDefaultButton"
+              data-dropdown-toggle="dropdown"
+            >
+              <img
+                src="img/profile.svg"
+                alt=""
+                class="mx-auto my-auto p-0 border-none bg-transparent w-10"
+              />
+            </button>
+            <ul
+              id="dropdown"
+              aria-labelledby="dropdownDefaultButton"
+              class="bg-gradient-to-t from-cyan-700/75 to-[#444A85] bg-opacity-50 border-white ease-in-out hidden border border-opacity-10 shadow-lg text-white m-0 gap-5 rounded-xl md:w-44 w-28 z-40"
+            >
+              <li
+                class="btn normal-case rounded-tl-xl rounded-tr-xl w-full h-full overflow-hidden bg-transparent border-none text-white py-2 font-normal text-xs md:text-lg hover:bg-white group"
+              >
+                <a
+                  href="#"
+                  class="group-hover:transition group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-t group-hover:from-cyan-700/75 group-hover:to-[#444A85]"
+                >
+                  Dashboard
+                </a>
+              </li>
+              <li
+                class="btn normal-case rounded-tl-xl rounded-tr-xl w-full h-full overflow-hidden bg-transparent border-none text-white py-2 font-normal text-xs md:text-lg hover:bg-white group"
+              >
+                <a
+                  href="#"
+                  class="group-hover:transition group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-t group-hover:from-cyan-700/75 group-hover:to-[#444A85]"
+                >
+                  About me
+                </a>
+              </li>
+              <li
+                class="btn normal-case rounded-tl-xl rounded-tr-xl w-full h-full overflow-hidden bg-transparent border-none text-white py-2 font-normal text-xs md:text-lg hover:bg-white group"
+              >
+                <a
+                  href="#"
+                  class="group-hover:transition group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-t group-hover:from-cyan-700/75 group-hover:to-[#444A85]"
+                >
+                  Finance
+                </a>
+              </li>
+              <li
+                class="btn normal-case rounded-tl-xl rounded-tr-xl w-full h-full overflow-hidden bg-transparent border-none text-white py-2 font-normal text-xs md:text-lg hover:bg-white group"
+              >
+                <a
+                  href="#"
+                  class="group-hover:transition group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-t group-hover:from-cyan-700/75 group-hover:to-[#444A85]"
+                >
+                  Log Out
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Main_Header -->
+        <div
+          id="responsive_md"
+          class="md:grid-cols-2 md:flex md:mx-auto md:w-max md:gap-16"
+        >
+          <div
+            id="main_header"
+            class="grid-rows-4 md:grid-cols-2 md:my-auto md:pr-10 pt-14"
+          >
+            <div id="logo" class="w-max mx-auto sm:mx-auto sm:grid-rows-2">
+              <img
+                src="img/logo.svg"
+                alt=""
+                class="w-36 sm:w-40 mx-auto sm:mx-auto"
+              />
+              <h2
+                class="text-white font-bold w-max sm:mx-auto text-5xl mx-auto pt-2"
+              >
+                Fortune
+              </h2>
+            </div>
+
+            <div id="paragraphs" class="pt-4">
+              <p
+                class="sm:mx-auto text-center text-white font-semibold max-w-sm sm:max-w-md mx-auto sm:my-1"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+                dolore repudiandae accusamus, doloremque itaque asperiores!
+                Sapiente voluptatum deleniti id numquam? Porro dolore,
+                repudiandae accusamus doloremque itaque asperiores! Sapiente
+                voluptatum deleniti id numquam?
+              </p>
+            </div>
+
+            <div id="navbar">
+              <div
+                id="content_navbar"
+                class="grid-cols-3 flex w-max mx-auto py-5 sm:gap-4 gap-4"
+              >
+                <div
+                  id="atm"
+                  class="bg-white w-20 h-20 rounded-full bg-opacity-50 border border-white border-opacity-40"
+                >
+                  <div class="w-full h-full flex justify-center">
+                    <img
+                      src="img/atm.svg"
+                      alt=""
+                      class="w-3/5 relative sm:w-3/5 md:w-3/5"
+                    />
+                  </div>
+                </div>
+                <div
+                  id="community"
+                  class="bg-white w-20 h-20 rounded-full bg-opacity-50 border border-white border-opacity-40"
+                >
+                  <div class="w-full h-full flex justify-center">
+                    <img
+                      src="img/community.svg"
+                      alt=""
+                      class="w-3/5 relative sm:w-3/5 md:w-3/5"
+                    />
+                  </div>
+                </div>
+                <div
+                  id="money"
+                  class="bg-white w-20 h-20 rounded-full bg-opacity-50 border border-white border-opacity-40"
+                >
+                  <div class="w-full h-full flex justify-center">
+                    <img
+                      src="img/money.svg"
+                      alt=""
+                      class="w-3/5 relative sm:w-3/5 md:w-3/5"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="btn">
+              <div id="content_btn" class="sm:grid-rows-2">
+                <div id="get_started" class="mx-auto w-max">
+                  <button
+                    class="relative bg-gradient-to-t from-cyan-700/75 to-[#444A85] btn hover:border-white hover:border-opacity-30 w-40 h-16 sm:w-52 sm:h-16 text-white border border-white rounded-full border-opacity-30 font-semibold shadow-md my-3"
+                  >
+                    <a href="login.html" class="w-max m-auto">Get Started</a>
+                  </button>
+                </div>
+                <div id="More" class="mx-auto w-max">
+                  <button
+                    href="#behaviour_stop"
+                    class="relative bg-white bg-opacity-30 w-40 h-16 sm:w-52 sm:h-16 btn hover:bg-white hover:bg-opacity-30 hover:border-white hover:border-opacity-30 text-white border border-white rounded-full border-opacity-30 font-semibold shadow-md"
+                  >
+                    <a href="#behaviour_stop" class="w-max m-auto">More</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="behaviour_stop"></div>
+
+          <div id="main" class="grid-rows-3 p-8">
+            <div
+              id="result_money"
+              data-aos="fade-up"
+              class="bg-white bg-opacity-10 flex max-w-lg h-44 sm:max-w-lg sm:h-52 px-6 rounded-2xl mx-auto my-10 border-white border-opacity-30 border shadow-lg"
+            >
+              <p class="text-white text-right mr-5 w-max my-auto sm:text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                dignissim elit ut finibus congue. Fusce nibh dui, consequat sed
+                lacus at, ornare pharetra nisl.
+              </p>
+              <img src="img/dollars.svg" alt="" class="w-1/6 sm:w-1/6" />
+            </div>
+            <div
+              id="communication"
+              data-aos="fade-up"
+              class="bg-white bg-opacity-10 flex max-w-lg h-44 sm:max-w-lg sm:h-52 px-6 rounded-2xl mx-auto my-10 border-white border-opacity-30 border shadow-lg"
+            >
+              <img src="img/commucation.svg" alt="" class="w-1/4 sm:w-1/4" />
+              <p class="text-white text-left ml-5 w-max my-auto sm:text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                dignissim elit ut finibus congue. Fusce nibh dui, consequat sed
+                lacus at, ornare pharetra nisl.
+              </p>
+            </div>
+            <div
+              id="chart_money"
+              data-aos="fade-up"
+              class="bg-white bg-opacity-10 flex max-w-lg h-44 sm:max-w-lg sm:h-52 px-6 rounded-2xl mx-auto my-10 border-white border-opacity-30 border shadow-lg"
+            >
+              <p class="text-white text-right mr-5 w-max my-auto sm:text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                dignissim elit ut finibus congue. Fusce nibh dui, consequat sed
+                lacus at, ornare pharetra nisl.
+              </p>
+              <img src="img/statistic.svg" alt="" class="w-1/4 sm:w-1/4" />
+            </div>
+          </div>
+        </div>
+
+        <div id="footer"
+          class="grid-rows-5 md:grid-cols-2 mx-auto md:flex md:justify-between md:mx-12 md:mt-52"
+        >
+          <div id="footer_sosmed" class="md:order-last md:my-auto">
+            <div id="logoTitle"
+              class="flex sm:w-max h-28 mx-auto w-max md:my-auto md:mx-auto md:h-max">
+              <img src="img/logo.svg" alt="" class="sm:w-16 mr-2 w-16" />
+              <h2
+                class="text-white font-bold w-max sm:text-3xl my-auto text-3xl">
+                Fortune
+              </h2>
+            </div>
+            <div id="btn_get_started"
+              class="sm:w-32 mx-auto md:mx-0 w-max my-3 md:my-auto md:invisible md:order-last">
+              <a
+                href=""
+                class="text-white sm:w-32 sm:h-16 w-32 h-16 bg-gradient-to-t from-cyan-700/75 to-[#444A85] border border-white rounded-3xl border-opacity-30 font-semibold shadow-md py-5 px-4"
+                >Get Started</a
+              >
+          </div>
+            <div
+              id="social_media"
+              class="w-max mx-auto md:my-auto md:mx-auto pt-5 sm:pt-0"
+            >
+              <div class="flex mx-auto w-max">
+                <img src="img/Theinstragram.svg" alt="" class="w-6" />
+                <img src="img/Vector-1.svg" alt="" class="mx-3 w-6" />
+                <img src="img/Vector-2.svg" alt="" class="w-6" />
+              </div>
+              <span class="block text-white py-3 text-opacity-50 text-sm"
+                >©Copyright Fortune 2023</span
+              >
+            </div>
+          </div>
+
+          <div
+            id="footer_infoUs"
+            class="md:max-w-md md:my-auto md:order-first pl-5 mt-10 md:pl-0"
+          >
+            <div
+              id="contact"
+              class="grid-rows-3 text-white pt-5 md:pb-0 md:pt-0"
+            >
+              <p>Contact:</p>
+              <p>unknown@gmail.com</p>
+              <p>081XXXXXX</p>
+            </div>
+            <div
+              id="address"
+              class="grid-rows-2 text-white pt-5 pb-10 md:pb-0 md:pt-0"
+            >
+              <p>Address:</p>
+              <p>Telkom University,Bandung,Indonesia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- aosJS -->
+    <script>
+      AOS.init();
+    </script>
+    <!-- Flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  </body>
+</html>

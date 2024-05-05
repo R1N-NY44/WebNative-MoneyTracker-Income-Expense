@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- icon title -->
+  <link rel="apple-touch-icon" type="image/png" href="../img/iconLogo.svg" />
+  <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="img/iconLogo.svg" />
+  <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="img/iconLogo.svg" />
+  <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="img/iconLogo.svg" />
+  <link rel="apple-touch-icon" type="image/png" href="img/iconLogo.svg" sizes="60x60" />
+  <link rel="icon" type="image/png" href="../img/iconLogo.svg" />
+  <link rel="icon" type="image/png" href="../img/iconLogo.svg" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../img/iconLogo.svg" sizes="192x192" />
+  <link rel="icon" type="image/png" href="../img/iconLogo.svg" sizes="16x16" />
+
+  <!-- aosJS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Flowbite -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+
+  <!-- daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/0c2355f323.js" crossorigin="anonymous"></script>
+
+  <!-- tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {},
+        },
+      },
+    };
+  </script>
+  <!-- 
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    -->
+  <!-- title -->
+  <title>Fortune - Income, Please input your income on this form</title>
+</head>
+
+<body class="">
+  <div id="nav_float" class="z-10 fixed w-full bottom-0">
+    <div
+      class="bg-[#36669a] bg-opacity-30 border border-white border-opacity-20 filter backdrop-blur-lg w-[26rem] h-16 mx-auto flex justify-evenly rounded-3xl m-10 shadow-md"
+      id="popUp_chat">
+      <a href="../home_page/homePage.html"
+        class="flex active:scale-90 active:transition focus:bg-[#3F49A6]/20 focus:w-max focus:h-full focus:rounded-lg focus:shadow-md focus:border focus:border-white/20 focus:p-[0.8rem]">
+        <img src="../img/Home.svg" alt="" class="w-6 my-auto" />
+      </a>
+      <a href="../statistic/AccountAnalyst.html"
+        class="flex active:scale-90 active:transition focus:bg-[#3F49A6]/20 focus:w-max focus:h-full focus:rounded-lg focus:shadow-md focus:border focus:border-white/20 focus:p-[0.8rem]">
+        <img src="../img/Vector.svg" alt="" class="w-6 my-auto" />
+      </a>
+      <a href="#"
+        class="flex items-center w-max h-full bg-[#3F49A6]/20 shadow-md border border-white/20 p-[0.8rem] rounded-lg">
+        <img src="../img/add.svg" alt="" class="w-max" />
+      </a>
+      <a href=""
+        class="flex items-center active:scale-90 active:transition focus:bg-[#3F49A6]/20 focus:w-max focus:h-full focus:rounded-lg focus:shadow-md focus:border focus:border-white/20 focus:p-[0.8rem]">
+        <img src="../img/dollar.svg" alt="" class="w-6 my-auto" />
+      </a>
+      <a href="../profile/profile.html"
+        class="flex active:scale-90 active:transition focus:bg-[#3F49A6]/20 focus:w-max focus:h-full focus:rounded-lg focus:shadow-md focus:border focus:border-white/20 focus:p-[0.8rem]">
+        <img src="../img/profile.svg" alt="" class="w-6 my-auto" />
+      </a>
+    </div>
+  </div>
+  <div class="container max-w-full h-[100vh] sm:bg-repeat bg-repeat" style="background-image: url('../img/bg.jpg')">
+    <div class="backdrop-blur-[13rem] h-full backdrop-filter py-5 relative md:flex">
+      <!-- container_login -->
+      <div id="container_income"
+        class="grid-rows-3 max-w-[26em] md:my-auto md:max-w-max md:scale-110 border-opacity-10 border-white border-2 bg-gradient-to-tl to-[#B5B780]/20 from-[#8A98E2]/10 bg-opacity-10 rounded-2xl mx-auto sm:max-w-lg shadow-lg my-10 px-7">
+        <div id="header" class="py-5 w-full h-full">
+          <div id="title_income" class="text-2xl text-white font-bold mx-auto w-max">
+            <h1>Income</h1>
+          </div>
+        </div>
+
+
+        <!-- Start Form -->
+        <form action="Php/Income.php" method="post">
+          <div id="field_income" class="grid-rows-5 mt-5 max-w-3xl">
+            <div id="responsive_income" class="md:grid-cols-2 md:flex md:items-center md:gap-5">
+              <div id="responsive1" class="md:w-1/2">
+                <div id="Rp" class="bg-white bg-opacity-10 mx-auto rounded-xl h-10">
+                  
+                  <div class="flex justify-around items-center justify-items-stretch">
+                    <label for="field_rp" class="md:py-0 text-white w-32 pl-5">Rp.</label>
+                    <input name="Ammount" id="field_rp" type="text"
+                      class="bg-transparent text-white rounded-full border-none w-full focus:ring-0" />
+                  </div>
+                </div>
+
+                <!-- Income Title -->
+                <div id="Title" class="bg-white bg-opacity-10 mx-auto rounded-xl my-3">
+                  <div class="flex justify-around">
+                    <label for="field_rp" class="my-auto py-3 text-white w-32 pl-5">Title :</label>
+                    <input name="Title" id="field_rp" type="text"
+                      class="bg-transparent text-white rounded-full border-none w-full focus:ring-0" />
+                  </div>
+                </div>
+
+                <!-- Income Category -->
+                <div id="Category" class="bg-white bg-opacity-10 mx-auto rounded-xl">
+                  <h1>Category</h1>
+                  <label>
+                    <input type="radio" name="Category" value="1">
+                    Food
+                  </label><br>
+                  <label>
+                    <input type="radio" name="Category" value="2">
+                    Investment
+                  </label><br>
+                </div>
+
+                <!-- Income Acc -->
+                <div id="AccDate" class="grid-cols-2 flex justify-between my-3 gap-2.5">
+
+                  <div id="account" class="bg-white bg-opacity-10 rounded-xl w-full relative">
+                    <h1>Account : </h1>
+                    <label>
+                      <input type="radio" name="Acc" value="ATM">
+                      ATM
+                    </label><br>
+                    <label>
+                      <input type="radio" name="Acc" value="Pockets">
+                      Pockets
+                    </label><br>
+                  </div>
+
+                  <div id="date" class="bg-white bg-opacity-10 w-60 rounded-xl relative grid-cols-2 flex">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                      <img src="../img/calendar.svg" alt="" class="w-4">
+                    </div>
+                    <input datepicker name="iDate" type="text" 
+                      class="bg-transparent border-none text-white placeholder-white text-sm rounded-lg focus:ring-blue-500 pl-10 focus:border-blue-500 block w-full p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="Select date">
+                  </div>
+                  
+                </div>
+
+              </div>
+              <div id="responsive2" class="md:w-1/2">
+                <div id="description" class="">
+                  <textarea name="Description" id="field_desc" rows="15" cols="50"
+                    class="w-full max-h-full md:h-60 resize-none pl-5 pt-5 text-white border-none bg-white bg-opacity-10 rounded-2xl placeholder-white"
+                    placeholder="description"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="btn_income" class="grid-cols-2 flex w-full gap-3 mt-2 pb-20 relative md:gap-5">
+            <button type="submit" name="cancel"
+              class="w-1/2 active:scale-90 transition bg-gradient-to-tl to-[#B5B780]/20 from-[#8A98E2]/10 text-white py-3.5 rounded-xl">Cancel</button>
+            <button type="submit" name="submit"
+              class="w-1/2 active:scale-90 transition bg-gradient-to-tl to-[#B5B780]/20 from-[#8A98E2]/10 text-white py-3.5 rounded-xl">Save</button>
+
+          </div>
+        </form>
+        <!-- Ending Form -->
+
+
+
+      </div>
+    </div>
+  </div>
+  <!-- aosJS init -->
+  <script>
+    AOS.init();
+  </script>
+  <!-- Flowbite -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/datepicker.min.js"></script>
+</body>
+
+</html>
