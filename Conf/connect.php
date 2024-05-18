@@ -1,6 +1,6 @@
 <?php
 $server   = "localhost";
-$database = "db_cashf";
+$database = "db_cash";
 $username = "boot";
 $password = "";
 
